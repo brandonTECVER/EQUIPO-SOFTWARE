@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal para Egresados</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #004b7c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #ffeb3b;
+    }
+
+    header h2 {
+      margin: 5px 0 0 0;
+      font-size: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+      background-color: #004b7c;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .form-control {
+      flex: 1;
+      min-width: 150px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      background-color: #004b7c;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .sexo-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .dob-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .dob-group input {
+      width: 60px;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    .full-width {
+      flex: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>INSTITUTO TECNOLÓGICO DE VERACRUZ</h1>
+    <h2>PORTAL PARA EGRESADOS</h2>
+  </header>
+
+  <div class="container">
+
+    <h3>PERSONAL</h3>
+    <div class="form-group">
+      <div class="form-control">
+        <label>APELLIDO PATERNO</label>
+        <input type="text">
+      </div>
+      <div class="form-control">
+        <label>APELLIDO MATERNO</label>
+        <input type="text">
+      </div>
+      <div class="form-control">
+        <label>NOMBRE(S)</label>
+        <input type="text">
+      </div>
+      <div class="form-control sexo-group">
+        <label>SEXO</label>
+        <input type="checkbox" id="hombre"><label for="hombre">HOMBRE</label>
+        <input type="checkbox" id="mujer"><label for="mujer">MUJER</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="form-control dob-group">
+        <label>FECHA DE NACIMIENTO</label>
+        <input type="text" placeholder="DIA">
+        <input type="text" placeholder="MES">
+        <input type="text" placeholder="AÑO">
+      </div>
+      <div class="form-control">
+        <label>CURP</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>DOMICILIO</h3>
+      <div class="form-group">
+        <div class="form-control">
+          <label>CALLE</label>
+          <input type="text">
+        </div>
+        <div class="form-control">
+          <label>NÚMERO</label>
+          <input type="text">
+        </div>
+        <div class="form-control">
+          <label>COLONIA</label>
+          <input type="text">
+        </div>
+        <div class="form-control">
+          <label>CÓDIGO POSTAL</label>
+          <input type="text">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="form-control">
+          <label>MUNICIPIO</label>
+          <input type="text">
+        </div>
+        <div class="form-control">
+          <label>ESTADO</label>
+          <input type="text">
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>CONTACTO</h3>
+      <div class="form-group">
+        <div class="form-control">
+          <label>TELÉFONO</label>
+          <input type="text">
+        </div>
+        <div class="form-control">
+          <label>CORREO</label>
+          <input type="email">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
