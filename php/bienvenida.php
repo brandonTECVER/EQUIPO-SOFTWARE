@@ -19,4 +19,4 @@ $control = htmlspecialchars($_SESSION['no_control']);
     <h1>✅ Bienvenido, <?php echo $control; ?></h1>
 </body>
 </html>
-s
+
