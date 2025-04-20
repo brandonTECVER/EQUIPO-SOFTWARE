@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encuesta Académica - Tec Veracruz</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #004e7f, #004e7f);
+      color: #004e7f;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      background: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #004e7f;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .question {
+      margin: 30px 0;
+    }
+
+    .question label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #004e7f;
+    }
+
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-left: 20px;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    button {
+      background-color: #004e7f;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    button:hover {
+      background-color: #004e7f;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Encuesta Académica</h1>
+    <p><strong>II. Pertinencia y Disponibilidad de Medios y Recursos para el Aprendizaje</strong></p>
+    <p>Califique la calidad de la educación profesional proporcionada por el personal docente, así como el Plan de Estudios de la carrera que cursa y las condiciones del plantel en cuanto a infraestructura.</p>
+    
+    <form>
+      <div class="question">
+        <label>II.1 Calidad de los docentes:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="docentes" value="Muy Buena" required> Muy Buena</label>
+          <label><input type="radio" name="docentes" value="Buena"> Buena</label>
+          <label><input type="radio" name="docentes" value="Regular"> Regular</label>
+          <label><input type="radio" name="docentes" value="Mala"> Mala</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>II.2 Plan de Estudios:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="plan_estudios" value="Muy Buenos" required> Muy Buenos</label>
+          <label><input type="radio" name="plan_estudios" value="Buenos"> Buenos</label>
+          <label><input type="radio" name="plan_estudios" value="Regulares"> Regulares</label>
+          <label><input type="radio" name="plan_estudios" value="Malos"> Malos</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>II.3 Oportunidad de participar en proyectos de investigación y desarrollo:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="proyectos" value="Muy Buena" required> Muy Buena</label>
+          <label><input type="radio" name="proyectos" value="Buena"> Buena</label>
+          <label><input type="radio" name="proyectos" value="Regular"> Regular</label>
+          <label><input type="radio" name="proyectos" value="Mala"> Mala</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>II.4 Énfasis que se le prestaba a la investigación dentro del proceso de enseñanza:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="investigacion" value="Muy Buena" required> Muy Buena</label>
+          <label><input type="radio" name="investigacion" value="Buena"> Buena</label>
+          <label><input type="radio" name="investigacion" value="Regular"> Regular</label>
+          <label><input type="radio" name="investigacion" value="Mala"> Mala</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>II.5 Satisfacción con las condiciones de estudio (infraestructura):</label>
+        <div class="radio-group">
+          <label><input type="radio" name="infraestructura" value="Muy Buena" required> Muy Buena</label>
+          <label><input type="radio" name="infraestructura" value="Buena"> Buena</label>
+          <label><input type="radio" name="infraestructura" value="Regular"> Regular</label>
+          <label><input type="radio" name="infraestructura" value="Mala"> Mala</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <label>II.6 Experiencia obtenida a través de la residencia profesional:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="residencia" value="Muy Buena" required> Muy Buena</label>
+          <label><input type="radio" name="residencia" value="Buena"> Buena</label>
+          <label><input type="radio" name="residencia" value="Regular"> Regular</label>
+          <label><input type="radio" name="residencia" value="Mala"> Mala</label>
+        </div>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
+

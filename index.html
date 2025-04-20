@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema Integral de Información</title>
+
+
+  <link rel="stylesheet" href="styles.css" />  
+  
+  
+</head>
+<body>
+  <div class="container">
+    <div class="overlay">
+      <h1>Sistema De Encuentas </h1>
+    </div>
+    <div class="login-box">
+      <div class="tabs">
+        <button class="active">Alumnos</button>
+        <button>Personal</button>
+      </div>
+      <h2>Acceso a Alumnos</h2>
+
+      <form id="loginForm">
+        <p id="errorMsg" class="error-message"></p>
+        <p id="validoMsg" class="valido-message"></p>
+
+        <input type="text" id="control" name="control" placeholder="No. de Control" />
+        <!--   required />  -->
+        <input type="password" id="nip" name="nip" placeholder="NIP" />
+        <!--  required />  -->
+        <button type="submit" class="login-button">Ingresar</button>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js">
+  </script>
+  
+  
+</body>
+</html>
