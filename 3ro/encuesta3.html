@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desempeño Profesional - Encuesta</title>
+  <link rel="stylesheet" href="styles_encuesta.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Encuesta Académica</h1>
+    <p><strong>IV. DESEMPEÑO PROFESIONAL DE LOS EGRESADOS (COHERENCIA ENTRE LA FORMACIÓN Y EL TIPO DE EMPLEO)</strong></p>
+    <p>Marcar los campos que correspondan a su trayectoria profesional.</p>
+
+    <form action="guardar_desempeno_profesional.php" method="POST">
+      <!-- IV.1 Eficiencia -->
+      <div class="question">
+        <label>IV.1 Eficiencia para realizar las actividades laborales, en relación con su formación académica:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="eficiencia_laboral" value="Muy eficiente" required> Muy eficiente</label>
+          <label><input type="radio" name="eficiencia_laboral" value="Eficiente"> Eficiente</label>
+          <label><input type="radio" name="eficiencia_laboral" value="Poco eficiente"> Poco eficiente</label>
+          <label><input type="radio" name="eficiencia_laboral" value="Deficiente"> Deficiente</label>
+        </div>
+      </div>
+
+      <!-- IV.2 Formación académica vs desempeño -->
+      <div class="question">
+        <label>IV.2 ¿Cómo califica su formación académica con respecto a su desempeño laboral?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="formacion_vs_desempeno" value="Excelente" required> Excelente</label>
+          <label><input type="radio" name="formacion_vs_desempeno" value="Bueno"> Bueno</label>
+          <label><input type="radio" name="formacion_vs_desempeno" value="Regular"> Regular</label>
+          <label><input type="radio" name="formacion_vs_desempeno" value="Malo"> Malo</label>
+          <label><input type="radio" name="formacion_vs_desempeno" value="Pésimo"> Pésimo</label>
+        </div>
+      </div>
+
+      <!-- IV.3 Utilidad de las residencias/profesionales -->
+      <div class="question">
+        <label>IV.3 Utilidad de las residencias profesionales o prácticas profesionales para su desarrollo laboral y profesional:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="utilidad_residencias" value="Excelente" required> Excelente</label>
+          <label><input type="radio" name="utilidad_residencias" value="Bueno"> Bueno</label>
+          <label><input type="radio" name="utilidad_residencias" value="Regular"> Regular</label>
+          <label><input type="radio" name="utilidad_residencias" value="Malo"> Malo</label>
+          <label><input type="radio" name="utilidad_residencias" value="Pésimo"> Pésimo</label>
+        </div>
+      </div>
+
+      <button type="submit">Guardar sección</button>
+    </form>
+  </div>
+</body>
+</html>

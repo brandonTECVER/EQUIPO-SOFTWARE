@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encuesta Académica - Tec Veracruz</title>
+  <link rel="stylesheet" href="styles_encuesta.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Encuesta Académica</h1>
+    <p><strong>III. Ubicación laboral de los egresados</strong></p>
+    <p>Indique a cuál de los siguientes puntos corresponde su situación actual.</p>
+
+    <form action="guardar_encuesta_laboral.php" method="POST">
+      <!-- III.1 -->
+      <div class="question">
+        <label>III.1 Actividad a la que se dedica actualmente:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="actividad" value="Trabaja" required> Trabaja</label>
+          <label><input type="radio" name="actividad" value="Estudia"> Estudia</label>
+          <label><input type="radio" name="actividad" value="Estudia y trabaja"> Estudia y trabaja</label>
+          <label><input type="radio" name="actividad" value="No estudia ni trabaja"> No estudia ni trabaja</label>
+        </div>
+      </div>
+
+      <!-- III.2 -->
+      <div class="question">
+        <label>III.2 Tiempo para obtener el primer empleo:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="tiempo_empleo" value="Antes de egresar" required> Antes de egresar</label>
+          <label><input type="radio" name="tiempo_empleo" value="Menos de seis meses"> Menos de seis meses</label>
+          <label><input type="radio" name="tiempo_empleo" value="Entre seis meses y un año"> Entre seis meses y un año</label>
+          <label><input type="radio" name="tiempo_empleo" value="Más de un año"> Más de un año</label>
+        </div>
+      </div>
+
+      <!-- III.3 -->
+      <div class="question">
+        <label>III.3 Medio para obtener el empleo:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="medio_empleo" value="Bolsa de trabajo del plantel" required> Bolsa de trabajo del plantel</label>
+          <label><input type="radio" name="medio_empleo" value="Contactos personales"> Contactos personales</label>
+          <label><input type="radio" name="medio_empleo" value="Residencia profesional"> Residencia profesional</label>
+          <label><input type="radio" name="medio_empleo" value="Prácticas profesionales"> Prácticas profesionales</label>
+          <label><input type="radio" name="medio_empleo" value="Servicio social"> Servicio social</label>
+          <label><input type="radio" name="medio_empleo" value="Bolsa de trabajo externa"> Bolsa de trabajo externa</label>
+          <label><input type="radio" name="medio_empleo" value="Otra"> Otra</label>
+        </div>
+      </div>
+
+      <!-- III.4 -->
+      <div class="question">
+        <label>III.4 Requisitos de contratación:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="requisitos" value="Competencias laborales" required> Competencias laborales</label>
+          <label><input type="radio" name="requisitos" value="Especialidad"> Especialidad</label>
+          <label><input type="radio" name="requisitos" value="Titulación"> Titulación</label>
+          <label><input type="radio" name="requisitos" value="Servicio social"> Servicio social</label>
+          <label><input type="radio" name="requisitos" value="Residencia profesional"> Residencia profesional</label>
+          <label><input type="radio" name="requisitos" value="Idiomas"> Idiomas</label>
+          <label><input type="radio" name="requisitos" value="Disponibilidad para viajar"> Disponibilidad para viajar</label>
+          <label><input type="radio" name="requisitos" value="Otro"> Otro</label>
+        </div>
+      </div>
+
+      <!-- III.5 -->
+      <div class="question">
+        <label>III.5 Idioma que utiliza en el trabajo:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="idioma_trabajo" value="Inglés" required> Inglés</label>
+          <label><input type="radio" name="idioma_trabajo" value="Francés"> Francés</label>
+          <label><input type="radio" name="idioma_trabajo" value="Alemán"> Alemán</label>
+          <label><input type="radio" name="idioma_trabajo" value="Otro"> Otro</label>
+          <label><input type="radio" name="idioma_trabajo" value="Ninguno"> Ninguno</label>
+        </div>
+      </div>
+
+      <!-- III.6 -->
+      <div class="question">
+        <label>III.6 Proporción en que utiliza habilidades del idioma extranjero:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="proporcion_idioma" value="Hablar" required> Hablar</label>
+          <label><input type="radio" name="proporcion_idioma" value="Leer"> Leer</label>
+          <label><input type="radio" name="proporcion_idioma" value="Escribir"> Escribir</label>
+          <label><input type="radio" name="proporcion_idioma" value="Entender"> Entender</label>
+        </div>
+      </div>
+
+      <!-- III.7 -->
+      <div class="question">
+        <label>III.7 Antigüedad en el empleo:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="antiguedad" value="Menos de un año" required> Menos de un año</label>
+          <label><input type="radio" name="antiguedad" value="1 año"> 1 año</label>
+          <label><input type="radio" name="antiguedad" value="2 años"> 2 años</label>
+          <label><input type="radio" name="antiguedad" value="3 años o más"> 3 años o más</label>
+        </div>
+      </div>
+
+      <!-- III.8 -->
+      <div class="question">
+        <label>III.8 Ingreso mensual (en salarios mínimos):</label>
+        <div class="radio-group">
+          <label><input type="radio" name="ingreso" value="Menos de 5" required> Menos de 5</label>
+          <label><input type="radio" name="ingreso" value="Entre 5 y 10"> Entre 5 y 10</label>
+          <label><input type="radio" name="ingreso" value="Entre 11 y 15"> Entre 11 y 15</label>
+          <label><input type="radio" name="ingreso" value="Más de 15"> Más de 15</label>
+        </div>
+      </div>
+
+      <!-- III.9 -->
+      <div class="question">
+        <label>III.9 Nivel jerárquico en el trabajo:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="jerarquia" value="Técnico" required> Técnico</label>
+          <label><input type="radio" name="jerarquia" value="Supervisor"> Supervisor</label>
+          <label><input type="radio" name="jerarquia" value="Jefe de área"> Jefe de área</label>
+          <label><input type="radio" name="jerarquia" value="Ejecutivo"> Ejecutivo</label>
+          <label><input type="radio" name="jerarquia" value="Empresario"> Empresario</label>
+        </div>
+      </div>
+
+      <!-- III.10 -->
+      <div class="question">
+        <label>III.10 Condición del trabajo:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="condicion" value="Base" required> Base</label>
+          <label><input type="radio" name="condicion" value="Eventual"> Eventual</label>
+          <label><input type="radio" name="condicion" value="Contrato"> Contrato</label>
+          <label><input type="radio" name="condicion" value="Otro"> Otro</label>
+        </div>
+      </div>
+
+      <!-- III.11 -->
+      <div class="question">
+        <label>III.11 Relación del trabajo con su formación:</label>
+        <div class="radio-group">
+          <label><input type="radio" name="relacion_formacion" value="0%" required> 0%</label>
+          <label><input type="radio" name="relacion_formacion" value="20%"> 20%</label>
+          <label><input type="radio" name="relacion_formacion" value="40%"> 40%</label>
+          <label><input type="radio" name="relacion_formacion" value="60%"> 60%</label>
+          <label><input type="radio" name="relacion_formacion" value="80%"> 80%</label>
+          <label><input type="radio" name="relacion_formacion" value="100%"> 100%</label>
+        </div>
+      </div>
+
+      <a href="encuesta3.html">
+        <button type="button">Siguiente</button>
+      </a>
+    </form>
+  </div>
+</body>
+</html>
